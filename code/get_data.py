@@ -1,10 +1,10 @@
 from pprint import pprint
 from fake_useragent import UserAgent
-from pyopt.client import PriceHistory
+from client import PriceHistory
 
  # Initialize the client.
 price_history_client = PriceHistory(
-    symbols=['AAPL','MSFT','SQ'],
+    symbols=['AAPL','MSFT','SQ','AMZN'],
     user_agent=UserAgent().edge
 )
 

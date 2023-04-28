@@ -69,7 +69,7 @@ class PriceHistory():
         to_date = datetime.today().date()
 
         # Calculate the Start and End Point.
-        from_date = to_date - relativedelta(months=6)
+        from_date = to_date - relativedelta(months=12)
 
         for symbol in self._symbols:
 
